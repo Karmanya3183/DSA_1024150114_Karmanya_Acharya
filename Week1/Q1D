@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+bool isprime(int a) {
+    if(a<=1){
+       return false;
+    }
+    else for(int i=2;i<a;i++){
+        if(a%i==0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int x,y;
+    cin >>x;
+
+    if(isprime(x)==true){
+        cout<<"number is prime"<<endl;
+    }
+    else cout<<"number is composite"<<endl;
+    return 0;
+}
